@@ -26,7 +26,7 @@ class LinguaPloneLinker(object):
         - a path
 
     This section expects that plone content has already been constructed. The
-    new translations are then created with plone.app.multilingual.
+    new translations are then created with LinguaPlone.
 
     """
     classProvides(ISectionBlueprint)
