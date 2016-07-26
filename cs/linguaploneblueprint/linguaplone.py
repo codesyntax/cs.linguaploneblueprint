@@ -10,10 +10,8 @@ https://github.com/4teamwork/ftw.blueprints/blob/master/ftw/blueprints/sections/
 from collective.transmogrifier.interfaces import ISection
 from collective.transmogrifier.interfaces import ISectionBlueprint
 from collective.transmogrifier.utils import defaultMatcher
-from plone.uuid.interfaces import IUUIDGenerator
 from Products.LinguaPlone.I18NBaseObject import AlreadyTranslated
 from Products.LinguaPlone.interfaces import ITranslatable
-from zope.component import getUtility
 from zope.interface import classProvides
 from zope.interface import implements
 
@@ -42,7 +40,6 @@ class LinguaPloneLinker(object):
                                            'canonicalTranslation')
         self.translationkey = defaultMatcher(options, 'translation-key', name,
                                              'translationOf')
-        self.uuid_generator = getUtility(IUUIDGenerator)
 
         self.deferred = []
 
