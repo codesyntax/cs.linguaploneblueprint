@@ -9,9 +9,10 @@ It uses the same code structure as the multilingual blueprint provided by
 
 You need to provide the following keys for your content:
 
-**_canonicalTranslation**: True or False, depending on whether this content is a canonical object or not
+* **_canonicalTranslation**: True or False, depending on whether this content is a canonical object or not
 
-**_translationOf**: this key is ignored if _canonicalTranslation is True. If _canonicalTranslation is True
+
+* **_translationOf**: this key is ignored if _canonicalTranslation is True. If _canonicalTranslation is True
 this key must contain the path of the canonical object.
 
 
