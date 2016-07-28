@@ -91,8 +91,7 @@ class LinguaPloneLinker(object):
             if (ITranslatable.providedBy(obj) and
                     ITranslatable.providedBy(canonical)):
                 try:
-                    canonical.addTranslationReference(obj)
-                    #obj.addTranslationReference(canonical)
+                    obj.addTranslationReference(canonical)
                 except AlreadyTranslated:
                     from logging import getLogger
                     log = getLogger(__name__)
